@@ -5,7 +5,17 @@ use clap::Parser;
 #[clap(name = "say")]
 #[clap(version = "v0.1.0")]
 #[clap(author = "CarlosEduardoL")]
-#[clap(about = "Rust echo copy", long_about = None)]
+#[clap(about = "Rust echo copy", long_about = "If -e is in effect, the following sequences are recognized:
+  \\\\     backslash
+  \\a     alert (BEL)
+  \\b     backspace
+  \\c     produce no further output
+  \\e     escape
+  \\f     form feed
+  \\n     new line
+  \\r     carriage return
+  \\t     horizontal tab
+  \\v     vertical tab")]
 struct _SayArgs {
     #[clap(value_name = "TEXT")]
     /// Text to be printed on the stdout
@@ -24,8 +34,8 @@ struct _SayArgs {
 #[derive(Debug)]
 pub struct SayArgs {
     pub text: Vec<String>,
-    pub trim_new_line: bool,
     pub backslash_interpretation: bool,
+    pub trim_new_line: bool,
 }
 
 pub fn args() -> SayArgs {
