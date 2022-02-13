@@ -1,3 +1,4 @@
+use clap::Parser;
 use std::process::exit;
 use clap::lazy_static::lazy_static;
 use EscapeResult::Inescapable;
@@ -7,7 +8,7 @@ use crate::EscapeResult::{Char, Return};
 mod args;
 mod test;
 
-lazy_static! { static ref ARGS: SayArgs = args::args();}
+lazy_static! { static ref ARGS: SayArgs = SayArgs::parse();}
 
 fn main() {
     let mut text = ARGS.text.join(" ");

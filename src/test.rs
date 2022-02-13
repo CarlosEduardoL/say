@@ -5,7 +5,6 @@ mod test {
     use predicates::prelude::predicate;
     static MESSAGE: &str = "\\nHello \\v\\t World!\\a\\c please stop";
 
-
     #[test]
     fn say_new_line_no_interpretation() {
         let echo = CMD::new("echo")
