@@ -30,7 +30,7 @@ say Hello, World!
 This will display the text "Hello, World!" on the console.
 
 ```bash
-say -e "Hello,\\t\\t\\t\\tWorld!\\nHow are you today?\\n"
+say -e "Hello,\t\t\t\tWorld!\nHow are you today?\n"
 ```
 This will display the text "Hello," followed by four horizontal tabs, followed by the word "World!", and then a newline character. After the newline, it will display the text "How are you today?" on a new line.
 
