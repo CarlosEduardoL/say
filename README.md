@@ -37,5 +37,5 @@ This will display the text "Hello," followed by four horizontal tabs, followed b
 ## Contributing
 Say is a small project created for learning purposes, but contributions are always welcome! If you have an idea for an improvement, feel free to create a pull request.
 
-License
+## License
 Say is released under the MIT license. See the LICENSE file for details.
