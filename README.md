@@ -34,6 +34,11 @@ say -e "Hello,\t\t\t\tWorld!\nHow are you today?\n"
 ```
 This will display the text "Hello," followed by four horizontal tabs, followed by the word "World!", and then a newline character. After the newline, it will display the text "How are you today?" on a new line.
 
+```bash
+say -e "Hello, \x1b[31mWorld!\x1b[0m"
+```
+This will display the text "Hello, World!" on the console, with the word "World!" colored in red.
+
 ## Contributing
 Say is a small project created for learning purposes, but contributions are always welcome! If you have an idea for an improvement, feel free to create a pull request.
 
